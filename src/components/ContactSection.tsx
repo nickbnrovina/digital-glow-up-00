@@ -61,11 +61,19 @@ const ContactSection = () => {
                 Boek een Strategiegesprek
               </a>
               
-              <div className="mt-8 pt-6 border-t border-border">
-                <p className="text-sm font-medium mb-1">Liever mailen?</p>
-                <a href="mailto:hello@kustlab.com" className="text-primary hover:underline">
-                  hello@kustlab.com
-                </a>
+              <div className="mt-8 pt-6 border-t border-border flex flex-col gap-3">
+                <div>
+                  <p className="text-sm font-medium mb-1">Liever mailen?</p>
+                  <a href="mailto:hello@kustlab.com" className="text-primary hover:underline font-medium">
+                    hello@kustlab.com
+                  </a>
+                </div>
+                <div>
+                  <p className="text-sm font-medium mb-1">Of direct bellen?</p>
+                  <a href="tel:+32479271206" className="text-primary hover:underline font-medium">
+                    0479 27 12 06
+                  </a>
+                </div>
               </div>
             </div>
           </motion.div>
