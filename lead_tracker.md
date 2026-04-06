@@ -6,12 +6,17 @@ Dit is de centrale plek waar we je acquisitie bijhouden. Als Digital Solutions C
 
 | Bedrijfsnaam | Contact / E-mail | Branche | Status | Volgende Actie | Datum Laatste Contact |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Loodgieterij Baert** | info@loodgieterij-baert.be | Loodgieters | 🟡 E-mail 1 verstuurd | Follow-up mail over 5 dagen (indien geen reactie) | Vandaag |
-| **Dakwerken Nathan** | dakwerkennathan@gmail.com | Dakwerkers | 🟡 E-mail 1 verstuurd | Follow-up mail over 5 dagen (indien geen reactie) | Vandaag |
-| **Bert Rebry** | info@rebrybert.be | Installateurs | 🟡 E-mail 1 verstuurd | Follow-up mail over 5 dagen (indien geen reactie) | Vandaag |
-| **AT Concept** | info@at-concept.be | Algemene Aannemer | 🟡 E-mail 1 verstuurd | Follow-up mail over 5 dagen (indien geen reactie) | Vandaag |
-| **Dakralux** | info@dakralux.be | Dakwerkers | 🟡 E-mail 1 verstuurd | Follow-up mail over 5 dagen (indien geen reactie) | Vandaag |
-| **DB Dakwerken Brugge** | info@db-dakwerkenbrugge.be | Dakwerkers | 🟡 E-mail 1 verstuurd | Follow-up mail over 5 dagen (indien geen reactie) | Vandaag |
+| **Loodgieterij Baert** | info@loodgieterij-baert.be | Loodgieters | 🟡 E-mail 1 verstuurd | Follow-up over 5 dgn | 06-04-2026 |
+| **Dakwerken Nathan** | dakwerkennathan@gmail.com | Dakwerkers | 🟡 E-mail 1 verstuurd | Follow-up over 5 dgn | 06-04-2026 |
+| **Bert Rebry** | info@rebrybert.be | Installateurs | 🟡 E-mail 1 verstuurd | Follow-up over 5 dgn | 06-04-2026 |
+| **AT Concept** | info@at-concept.be | Algemene Aannemer | 🟡 E-mail 1 verstuurd | Follow-up over 5 dgn | 06-04-2026 |
+| **Dakralux** | info@dakralux.be | Dakwerkers | 🟡 E-mail 1 verstuurd | Follow-up over 5 dgn | 06-04-2026 |
+| **DB Dakwerken Brugge** | info@db-dakwerkenbrugge.be | Dakwerkers | 🟡 E-mail 1 verstuurd | Follow-up over 5 dgn | 06-04-2026 |
+| **Elektriciteitswerken Rammelaere** | info@elektriciteitswerkenrammelaere.com | Elektricien | 🟡 E-mail 1 verstuurd | Follow-up over 5 dgn | 06-04-2026 |
+| **T-ELEK** | info@t-elek.be | Elektricien | 🔴 Bounced | Ander e-mailadres zoeken / Nabellen | 06-04-2026 |
+| **Frederik Fack** | info@frederikfack.be | Installateurs | 🟡 E-mail 1 verstuurd | Follow-up over 5 dgn | 06-04-2026 |
+| **Tuinen Devriendt** | info@tuinendevriendt.be | Tuinaanleg | 🔴 Bounced | Ander e-mailadres zoeken / Nabellen | 06-04-2026 |
+| **All-in Tuinen** | info@all-intuinen.be | Tuinaanleg | 🟡 E-mail 1 verstuurd | Follow-up over 5 dgn | 06-04-2026 |
 
 ---
 

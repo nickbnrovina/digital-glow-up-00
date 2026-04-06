@@ -74,6 +74,12 @@ const ContactSection = () => {
                     0479 27 12 06
                   </a>
                 </div>
+                <div>
+                  <p className="text-sm font-medium mb-1">Bedrijfsgegevens</p>
+                  <p className="text-sm text-muted-foreground">Kustlab</p>
+                  <p className="text-sm text-muted-foreground">Brugge, België</p>
+                  <p className="text-sm text-muted-foreground">Ondernemingsnummer: BE 1036.200.223</p>
+                </div>
               </div>
             </div>
           </motion.div>
