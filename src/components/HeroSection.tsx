@@ -313,7 +313,7 @@ const HeroSection = () => {
             </span>
 
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-extrabold leading-tight text-white mb-6 uppercase tracking-tight animate-fade-in-up" style={{ animationDelay: '0.8s', animationFillMode: 'both', textShadow: '0 0 30px rgba(0, 255, 223, 0.2)' }}>
-             Wij Bouwen de <br className="hidden md:block"/> Digitale <span className="text-[#00ffdf]">Infrastructuur</span><br className="md:hidden block"/> van Morgen
+             <span className="text-gradient-flow inline-block pb-2">Wij Bouwen de <br className="hidden md:block"/> Digitale Infrastructuur<br className="md:hidden block"/> van Morgen</span>
             </h1>
 
             <p className="text-lg md:text-xl text-white/70 font-light max-w-2xl mx-auto mb-8 animate-fade-in-up" style={{ animationDelay: '1.0s', animationFillMode: 'both' }}>
@@ -322,14 +322,13 @@ const HeroSection = () => {
 
             <a
               href="#pakketten"
-              className="cta-btn-hero inline-flex items-center gap-2 px-8 py-4 text-lg font-semibold text-[#00ffdf] border border-[#00ffdf] rounded bg-transparent transition-all duration-300 hover:bg-[#00ffdf]/10 group animate-fade-in-up"
+              className="cta-btn-hero inline-flex items-center gap-2 px-8 py-4 text-lg font-semibold border-gradient-flow rounded bg-transparent transition-all duration-300 hover:scale-105 group animate-fade-in-up"
               style={{ 
                 animationDelay: '1.2s', 
-                animationFillMode: 'both',
-                boxShadow: '0 0 15px rgba(0, 255, 223, 0.1), inset 0 0 15px rgba(0, 255, 223, 0.1)'
+                animationFillMode: 'both'
               }}
             >
-              Start jouw project <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+              <span className="text-gradient-flow">Start jouw project</span> <ArrowRight size={20} className="text-primary group-hover:translate-x-1 transition-transform" />
             </a>
 
           </div>

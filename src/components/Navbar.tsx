@@ -26,9 +26,17 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between">
-        <a href="#" className="text-xl md:text-2xl font-heading font-bold tracking-tight">
-          <span className="text-foreground">Kust</span>
-          <span className="text-primary">lab</span>
+        <a href="#" className="flex items-baseline text-xl md:text-2xl font-heading font-bold tracking-tight group">
+          <span 
+            className="inline-block bg-clip-text text-transparent transition-opacity duration-300 group-hover:opacity-80 pb-1"
+            style={{
+              backgroundImage: "linear-gradient(to right, #00ebd3, #61c87a, #a5b55e, #ff8a00, #ff5200, #ff3300, #00ebd3)",
+              backgroundSize: "200% auto",
+              animation: "textGradientFlow 5s linear infinite"
+            }}
+          >
+            Kustlab.
+          </span>
         </a>
 
         {/* Desktop */}
@@ -44,7 +52,7 @@ const Navbar = () => {
           ))}
           <a
             href="#contact"
-            className="px-5 py-2.5 rounded-lg bg-primary text-primary-foreground text-sm font-semibold hover:opacity-90 transition-all duration-300 glow-primary"
+            className="px-5 py-2.5 rounded-lg bg-gradient-flow text-primary-foreground text-sm font-semibold hover:opacity-90 transition-all duration-300 glow-primary"
           >
             Boek een Strategiegesprek
           </a>
@@ -76,7 +84,7 @@ const Navbar = () => {
           <a
             href="#contact"
             onClick={() => setMobileOpen(false)}
-            className="block text-center px-5 py-2.5 rounded-lg bg-primary text-primary-foreground text-sm font-semibold"
+            className="block w-full text-center px-4 py-3 rounded-lg bg-gradient-flow text-primary-foreground font-semibold"
           >
             Boek een Strategiegesprek
           </a>

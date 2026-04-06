@@ -17,7 +17,7 @@ const AboutSection = () => {
           <div className="flex-1 space-y-8">
             <div className="space-y-4">
               <h2 className="text-3xl md:text-4xl font-heading font-bold">
-                Aangenaam, ik ben <span className="text-primary">Nick</span>
+                <span className="text-gradient-flow inline-block pb-1">Aangenaam, ik ben Nick</span>
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 De drijvende kracht achter Kustlab. Vanuit Brugge help ik startende zelfstandigen, lokale kmo's en creatieve freelancers met betaalbare en professionele digitale oplossingen.

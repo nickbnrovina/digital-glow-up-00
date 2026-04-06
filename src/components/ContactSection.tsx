@@ -29,7 +29,7 @@ const ContactSection = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
-            Klaar om digitaal te <span className="text-primary italic">groeien</span>?
+            <span className="text-gradient-flow inline-block pb-1">Klaar om digitaal te <span className="italic">groeien</span>?</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Laat je gegevens achter en we plannen een vrijblijvende kennismaking in om jouw digitale project te bespreken.
@@ -55,7 +55,7 @@ const ContactSection = () => {
                 href="https://calendly.com/brovinanick/15min" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 w-full py-4 rounded-lg bg-primary text-primary-foreground font-semibold hover:opacity-90 glow-primary transition-all duration-300 shadow-lg hover:-translate-y-1"
+                className="flex items-center justify-center gap-2 w-full py-4 rounded-lg bg-gradient-flow text-primary-foreground font-semibold hover:opacity-90 transition-all duration-300 shadow-lg hover:-translate-y-1"
               >
                 <Calendar size={18} />
                 Boek een Strategiegesprek

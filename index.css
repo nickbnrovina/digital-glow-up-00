@@ -2,14 +2,14 @@
 :root {
     --bg-dark: #0a0a0e;
     --bg-secondary: #0f1016;
-    --neon-teal: #00f2fe;
-    --neon-orange: #ff7b00;
+    --neon-teal: #00ebd3;
+    --neon-orange: #ff5200;
     --text-primary: #f0f0f0;
     --text-secondary: #a0a0b0;
     --glass-bg: rgba(255, 255, 255, 0.02);
     --glass-border: rgba(255, 255, 255, 0.08);
-    --neon-gradient: linear-gradient(135deg, var(--neon-teal) 0%, #4facfe 100%);
-    --orange-gradient: linear-gradient(135deg, var(--neon-orange) 0%, #ff5200 100%);
+    --neon-gradient: linear-gradient(to right, #00ebd3, #61c87a, #a5b55e, #ff8a00, #ff5200);
+    --orange-gradient: linear-gradient(135deg, #ff8a00 0%, #ff3300 100%);
     --font-heading: 'Outfit', sans-serif;
     --font-body: 'Inter', sans-serif;
 }
@@ -55,9 +55,27 @@ a {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 0.5rem;
-    background: var(--neon-gradient);
+    background: linear-gradient(to right, #00ebd3, #61c87a, #a5b55e, #ff8a00, #ff5200, #ff3300, #00ebd3);
+    background-size: 200% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    animation: textGradientFlow 6s linear infinite;
+}
+
+.text-gradient-flow {
+    background: linear-gradient(to right, #00ebd3, #61c87a, #a5b55e, #ff8a00, #ff5200, #ff3300, #00ebd3);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    animation: textGradientFlow 5s linear infinite;
+}
+
+@keyframes textGradientFlow {
+    to { background-position: 200% center; }
 }
 
 .section-subtitle {
@@ -75,7 +93,7 @@ body::before {
     left: -10%;
     width: 60%;
     height: 60vw;
-    background: radial-gradient(circle, rgba(0,242,254,0.12) 0%, rgba(10,10,14,0) 70%);
+    background: radial-gradient(circle, rgba(0,235,211,0.12) 0%, rgba(10,10,14,0) 70%);
     z-index: -1;
     pointer-events: none;
 }
@@ -87,7 +105,7 @@ body::after {
     right: -10%;
     width: 60%;
     height: 60vw;
-    background: radial-gradient(circle, rgba(255,123,0,0.08) 0%, rgba(10,10,14,0) 70%);
+    background: radial-gradient(circle, rgba(255,82,0,0.08) 0%, rgba(10,10,14,0) 70%);
     z-index: -1;
     pointer-events: none;
 }
@@ -114,13 +132,16 @@ body::after {
 
 .btn-primary {
     background: var(--neon-gradient);
+    background-size: 200% auto;
+    animation: textGradientFlow 4s linear infinite;
     color: #fff;
-    box-shadow: 0 4px 15px rgba(0, 242, 254, 0.25);
+    box-shadow: 0 4px 15px rgba(0, 235, 211, 0.25);
+    border: none;
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 242, 254, 0.4);
+    box-shadow: 0 6px 20px rgba(0, 235, 211, 0.4);
 }
 
 .btn-secondary {
@@ -140,7 +161,7 @@ body::after {
     background: transparent;
 }
 .btn-outline:hover {
-    background: rgba(0, 242, 254, 0.1);
+    background: rgba(0, 235, 211, 0.1);
 }
 
 /* Navbar */

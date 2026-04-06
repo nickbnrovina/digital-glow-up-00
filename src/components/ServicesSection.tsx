@@ -67,7 +67,7 @@ const ServicesSection = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl md:text-5xl font-heading font-bold">
-            Volledige <span className="text-primary">Digitale Oplossingen</span>
+            <span className="text-gradient-flow inline-block pb-2">Volledige Digitale Oplossingen</span>
           </h2>
           <p className="text-lg text-muted-foreground">
             Bij Kustlab bieden we meer dan alleen webdesign. We bouwen digitale oplossingen die uw volledige bedrijfsprocessen ondersteunen en laten groeien.

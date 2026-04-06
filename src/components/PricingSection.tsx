@@ -73,8 +73,7 @@ const PricingSection = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-            Oplossingen die{" "}
-            <span className="gradient-text">meegroeien</span>
+            <span className="text-gradient-flow inline-block pb-1">Oplossingen die meegroeien</span>
           </h2>
         </motion.div>
 
@@ -96,7 +95,7 @@ const PricingSection = () => {
               }`}
             >
               {pkg.badge && (
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-primary text-primary-foreground text-xs font-semibold">
+                <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-flow text-white shadow-[0_0_15px_rgba(0,235,211,0.3)] text-xs font-semibold">
                   {pkg.badge}
                 </span>
               )}
@@ -130,7 +129,7 @@ const PricingSection = () => {
                 href="#contact"
                 className={`block text-center py-3 rounded-lg font-semibold text-sm transition-all duration-300 ${
                   pkg.highlighted
-                    ? "bg-primary text-primary-foreground hover:opacity-90 glow-primary"
+                    ? "bg-gradient-flow text-white hover:opacity-90 glow-primary shadow-[0_0_20px_rgba(0,235,211,0.4)]"
                     : "border border-foreground/15 text-foreground hover:bg-foreground/5"
                 }`}
               >

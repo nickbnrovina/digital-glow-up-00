@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kustlab - Visual Brand Guidelines</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-dark: #0a0a0e;
+            --bg-secondary: #0f1016;
+            --neon-teal: #00f2fe;
+            --neon-orange: #ff7b00;
+            --text-primary: #f0f0f0;
+            --text-secondary: #a0a0b0;
+            --glass-bg: rgba(255, 255, 255, 0.02);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --neon-gradient: linear-gradient(135deg, var(--neon-teal) 0%, #4facfe 100%);
+            --orange-gradient: linear-gradient(135deg, var(--neon-orange) 0%, #ff5200 100%);
+            --font-heading: 'Outfit', sans-serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-primary);
+            font-family: var(--font-body);
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .logo {
+            font-family: var(--font-heading);
+            font-size: 3rem;
+            font-weight: 800;
+            background: var(--text-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        .logo span {
+            background: var(--neon-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: var(--font-heading);
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-top: 50px;
+            margin-bottom: 25px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        h2::before {
+            content: '';
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background: var(--neon-gradient);
+            border-radius: 50%;
+        }
+
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+        }
+
+        /* Colors Section */
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .color-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .color-swatch {
+            height: 120px;
+            width: 100%;
+        }
+
+        .color-info {
+            padding: 15px;
+        }
+
+        .color-name {
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--text-primary);
+            margin-bottom: 5px;
+        }
+
+        .color-code {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            font-family: monospace;
+        }
+
+        /* Typography Section */
+        .typography-box {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .type-outfit {
+            font-family: var(--font-heading);
+        }
+        
+        .type-inter {
+            font-family: var(--font-body);
+        }
+
+        /* UI Elements */
+        .ui-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .glass-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 40px;
+            position: relative;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.8rem;
+            border-radius: 30px;
+            font-weight: 600;
+            font-family: var(--font-heading);
+            cursor: pointer;
+            border: none;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: var(--neon-gradient);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 242, 254, 0.25);
+        }
+
+        .btn-secondary {
+            background: var(--glass-bg);
+            color: var(--text-primary);
+            border: 1px solid var(--glass-border);
+        }
+
+        .btn-outline {
+            border: 2px solid var(--neon-teal);
+            color: var(--neon-teal);
+            background: transparent;
+        }
+
+        @media (max-width: 768px) {
+            .ui-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo">Kustlab<span>.</span></div>
+            <p style="font-size: 1.2rem;">Visual Brand Guidelines</p>
+        </header>
+
+        <section>
+            <h2>1. Typografie</h2>
+            <div class="typography-box type-outfit">
+                <div style="font-size: 0.9rem; color: var(--neon-teal); margin-bottom: 10px; font-weight: bold; text-transform: uppercase;">Headings Font</div>
+                <div style="font-size: 4rem; font-weight: 800; line-height: 1;">Outfit</div>
+                <div style="font-size: 1.5rem; margin-top: 10px; font-weight: 600; color: var(--text-secondary);">Aa Bb Cc Dd Ee Ff Gg 0123456789</div>
+                <p style="margin-top: 15px;">Gebruikt voor logo, H1 tot H6 titles en belangrijke call-to-actions.</p>
+            </div>
+
+            <div class="typography-box type-inter">
+                <div style="font-size: 0.9rem; color: var(--neon-orange); margin-bottom: 10px; font-weight: bold; text-transform: uppercase;">Body Font</div>
+                <div style="font-size: 3rem; font-weight: 500; line-height: 1;">Inter</div>
+                <div style="font-size: 1.2rem; margin-top: 10px; color: var(--text-secondary);">Aa Bb Cc Dd Ee Ff Gg 0123456789</div>
+                <p style="margin-top: 15px; color: var(--text-primary);">Gebruikt voor lopende alinea's, UI tekst, en formulieren. Dit zorgt voor optimale leesbaarheid over alle apparaten heen.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Kleurenpalet (Premium Dark)</h2>
+            <p>Het donkere thema in combinatie met de neon accenten creëert onze strategische, high-tech 'Digital Solutions' esthetiek.</p>
+            
+            <div class="color-grid" style="margin-top: 30px;">
+                <!-- Backgrounds -->
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: var(--bg-dark);"></div>
+                    <div class="color-info">
+                        <div class="color-name">Dark Background</div>
+                        <div class="color-code">#0a0a0e</div>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: var(--bg-secondary);"></div>
+                    <div class="color-info">
+                        <div class="color-name">Secondary BG</div>
+                        <div class="color-code">#0f1016</div>
+                    </div>
+                </div>
+                
+                <!-- Accents -->
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: var(--neon-teal);"></div>
+                    <div class="color-info">
+                        <div class="color-name">Primary: Neon Teal</div>
+                        <div class="color-code">#00f2fe</div>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: var(--neon-orange);"></div>
+                    <div class="color-info">
+                        <div class="color-name">Secondary: Neon Orange</div>
+                        <div class="color-code">#ff7b00</div>
+                    </div>
+                </div>
+
+                <!-- Text -->
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: var(--text-primary); border-bottom: 1px solid var(--glass-border);"></div>
+                    <div class="color-info">
+                        <div class="color-name">Text Primary</div>
+                        <div class="color-code">#f0f0f0</div>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: var(--text-secondary); border-bottom: 1px solid var(--glass-border);"></div>
+                    <div class="color-info">
+                        <div class="color-name">Text Secondary</div>
+                        <div class="color-code">#a0a0b0</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gradients -->
+            <div class="color-grid" style="margin-top: 20px;">
+                <div class="color-card">
+                    <div class="color-swatch" style="background: var(--neon-gradient);"></div>
+                    <div class="color-info">
+                        <div class="color-name">Teal Gradient</div>
+                        <div class="color-code">linear 135deg: #00f2fe to #4facfe</div>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch" style="background: var(--orange-gradient);"></div>
+                    <div class="color-info">
+                        <div class="color-name">Orange Gradient</div>
+                        <div class="color-code">linear 135deg: #ff7b00 to #ff5200</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>3. Grafische Componenten (UI)</h2>
+            <div class="ui-grid">
+                
+                <!-- Buttons -->
+                <div class="glass-card">
+                    <h3 style="margin-bottom: 20px; font-size: 1.5rem;">Buttons & Forms</h3>
+                    <div>
+                        <button class="btn btn-primary">Primary Action</button>
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <button class="btn btn-secondary">Secondary Action</button>
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <button class="btn btn-outline">Outline Action</button>
+                    </div>
+                    
+                    <div style="margin-top: 30px;">
+                        <label style="display:block; margin-bottom:10px; font-family: var(--font-heading); font-weight: 600;">Input Field</label>
+                        <input type="text" placeholder="name@company.com" style="width: 100%; padding: 12px; border-radius: 12px; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); color: white;">
+                    </div>
+                </div>
+
+                <!-- Glassmorphism -->
+                <div class="glass-card" style="background: linear-gradient(135deg, rgba(255,255,255,0.02) 0%, rgba(0, 242, 254, 0.05) 100%);">
+                    <h3 style="margin-bottom: 20px; font-size: 1.5rem; background: var(--neon-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Glassmorphism Effect</h3>
+                    <p style="color: var(--text-primary); font-size: 1.1rem; margin-bottom: 20px;">Dit is de signatuur stijl van de Kustlab kaarten, tabellen en formulieren.</p>
+                    <ul style="color: var(--text-secondary); margin-left: 20px; line-height: 1.8;">
+                        <li>Background: <code>rgba(255, 255, 255, 0.02)</code></li>
+                        <li>Borders: <code>rgba(255, 255, 255, 0.08)</code></li>
+                        <li>Backdrop-filter: <code>blur(16px)</code></li>
+                        <li>Border Radius: <code>20px</code></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>

@@ -78,7 +78,7 @@ const FaqSection = () => {
             Veelgestelde Vragen
           </span>
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-            Duidelijkheid <span className="italic">vooraf</span>
+            <span className="text-gradient-flow inline-block pb-1">Duidelijkheid <span className="italic">vooraf</span></span>
           </h2>
           <p className="text-muted-foreground text-lg">
             Alles wat je moet weten over onze werkwijze en oplossingen.
