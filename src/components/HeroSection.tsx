@@ -12,11 +12,18 @@ const HeroSection = () => {
         cy = window.innerHeight / 2;
     };
 
+    let ticking = false;
     const handleMouseMove = (e: MouseEvent) => {
-        const dx = e.clientX - cx;
-        const dy = e.clientY - cy;
-        root.style.setProperty('--mouse-x', `${dx}px`);
-        root.style.setProperty('--mouse-y', `${dy}px`);
+        if (!ticking) {
+            window.requestAnimationFrame(() => {
+                const dx = e.clientX - cx;
+                const dy = e.clientY - cy;
+                root.style.setProperty('--mouse-x', `${dx}px`);
+                root.style.setProperty('--mouse-y', `${dy}px`);
+                ticking = false;
+            });
+            ticking = true;
+        }
     };
 
     window.addEventListener('resize', handleResize);
@@ -111,8 +118,6 @@ const HeroSection = () => {
             border: 1px solid rgba(0, 255, 223, 0.6);
             background: rgba(0, 255, 223, 0.05);
             box-shadow: inset 0 0 12px rgba(0, 255, 223, 0.2);
-            backdrop-filter: blur(2px);
-            -webkit-backdrop-filter: blur(2px);
         }
 
         .cube .front  { transform: translateZ(30px); }
