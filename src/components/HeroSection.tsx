@@ -317,7 +317,7 @@ const HeroSection = () => {
             </h1>
 
             <p className="text-lg md:text-xl text-white/70 font-light max-w-2xl mx-auto mb-8 animate-fade-in-up" style={{ animationDelay: '1.0s', animationFillMode: 'both' }}>
-             Strategie &middot; Design &middot; Technologie &mdash; gebouwd om op te schalen.
+             Websites &middot; Automatisering &middot; Optimalisatie &mdash; gebouwd om jouw bedrijf op te schalen.
             </p>
 
             <a
