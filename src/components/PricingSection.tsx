@@ -76,7 +76,7 @@ const PricingSection = () => {
             <span className="text-gradient-flow inline-block pb-1">Oplossingen die meegroeien</span>
           </h2>
           <p className="text-muted-foreground text-sm">
-            Alle vermelde tarieven zijn exclusief 21% BTW.
+            Alle vermelde tarieven zijn vrijgesteld van BTW (kleine onderneming).
           </p>
         </motion.div>
 
