@@ -5,9 +5,17 @@ import { motion } from "framer-motion";
 const ContactSection = () => {
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitted(true);
+    const formData = new FormData(e.currentTarget);
+    
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData as any).toString(),
+    })
+      .then(() => setSubmitted(true))
+      .catch((error) => console.error("Netlify form error:", error));
   };
 
   return (
@@ -81,12 +89,14 @@ const ContactSection = () => {
                   </p>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-5">
+                <form onSubmit={handleSubmit} name="contact" data-netlify="true" className="space-y-5">
+                  <input type="hidden" name="form-name" value="contact" />
                   <h3 className="text-xl font-bold font-heading mb-6">Stuur ons een bericht</h3>
                   <div>
                     <label className="block text-sm font-medium mb-1.5">Naam</label>
                     <input
                       type="text"
+                      name="name"
                       required
                       className="w-full px-4 py-3 rounded-lg bg-background border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
                       placeholder="Je volledige naam"
@@ -96,6 +106,7 @@ const ContactSection = () => {
                     <label className="block text-sm font-medium mb-1.5">E-mail</label>
                     <input
                       type="email"
+                      name="email"
                       required
                       className="w-full px-4 py-3 rounded-lg bg-background border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
                       placeholder="hello@kustlab.com"
@@ -104,6 +115,7 @@ const ContactSection = () => {
                   <div>
                     <label className="block text-sm font-medium mb-1.5">Interesse in</label>
                     <select
+                      name="subject"
                       required
                       className="w-full px-4 py-3 rounded-lg bg-background border border-border text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
                       defaultValue=""
@@ -120,6 +132,7 @@ const ContactSection = () => {
                   <div>
                     <label className="block text-sm font-medium mb-1.5">Bericht (optioneel)</label>
                     <textarea
+                      name="message"
                       rows={3}
                       className="w-full px-4 py-3 rounded-lg bg-background border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all resize-none"
                       placeholder="Vertel kort over je project..."
