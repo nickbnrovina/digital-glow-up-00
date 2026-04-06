@@ -25,15 +25,15 @@ E-mail: hello@kustlab.com
 
 | Omschrijving | Aantal | Eenheidsprijs | Totaal |
 | :--- | :--- | :--- | :--- |
-| **Business Pakket: Website Ontwikkeling** | 1 | € 1.475,00 | € 1.475,00 |
-| Voorschotbetaling (50%) bij aanvang project | | | |
-| *Optionele toelichting (vb: inclusief basis SEO en Calendly integratie)* | | | |
+| **Business Pakket: Website Ontwikkeling** | 1 | € 2.950,00 | € 2.950,00 |
+| *Restbedrag pas te factureren bij oplevering (-50%)* | 1 | - € 1.475,00 | - € 1.475,00 |
+| *Toelichting: Betreft voorschotfactuur voor opstart project.* | | | |
 
 ---
 
 **Subtotaal:** € 1.475,00  
 **BTW:** € 0,00  
-### **TOTAAL TE BETALEN:** € 1.475,00  
+### **TE BETALEN VOORSCHOT:** € 1.475,00  
 
 **_Bijzondere vrijstellingsregeling kleine ondernemingen_**
 
