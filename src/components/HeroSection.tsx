@@ -321,7 +321,7 @@ const HeroSection = () => {
             </p>
 
             <a
-              href="#diensten"
+              href="#pakketten"
               className="cta-btn-hero inline-flex items-center gap-2 px-8 py-4 text-lg font-semibold text-[#00ffdf] border border-[#00ffdf] rounded bg-transparent transition-all duration-300 hover:bg-[#00ffdf]/10 group animate-fade-in-up"
               style={{ 
                 animationDelay: '1.2s', 
