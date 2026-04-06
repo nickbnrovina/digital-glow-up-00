@@ -9,7 +9,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="py-24 relative overflow-hidden bg-muted/30">
+    <section id="werkwijze" className="py-24 relative overflow-hidden bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
           
