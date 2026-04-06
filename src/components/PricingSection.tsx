@@ -1,8 +1,9 @@
 import { Check } from "lucide-react";
+import { motion } from "framer-motion";
 
 const packages = [
   {
-    name: "Instap",
+    name: "Starter",
     subtitle: "Zichtbaarheid",
     description: "Professionele, snelle website.",
     features: [
@@ -13,12 +14,12 @@ const packages = [
     highlighted: false,
   },
   {
-    name: "Midden",
+    name: "Business",
     subtitle: "Automatisering",
     description: "Website gekoppeld aan slimme processen.",
     badge: "Meest Gekozen",
     features: [
-      "Alles uit Instap +",
+      "Alles uit Starter +",
       "Leadgeneratie & CRM koppeling",
       "Geautomatiseerde afspraakplanning",
       "Basis e-mail automation",
@@ -26,11 +27,11 @@ const packages = [
     highlighted: true,
   },
   {
-    name: "Premium",
+    name: "E-Commerce / Premium",
     subtitle: "Digitale Dominantie",
     description: "Volledig ontzorgd met AI.",
     features: [
-      "Alles uit Midden +",
+      "Alles uit Business +",
       "Custom Portals",
       "Geavanceerde AI-chatbots",
       "Maandelijks onderhoud & advies",
@@ -39,20 +40,48 @@ const packages = [
   },
 ];
 
+const containerVariants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1
+    }
+  }
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 30 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+};
+
 const PricingSection = () => {
   return (
-    <section id="pakketten" className="section-padding">
+    <section id="pakketten" className="section-padding overflow-hidden">
       <div className="container mx-auto">
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <motion.div 
+          className="text-center max-w-2xl mx-auto mb-16"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+        >
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
             Oplossingen die{" "}
             <span className="gradient-text">meegroeien</span>
           </h2>
-        </div>
+        </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <motion.div 
+          className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, margin: "-50px" }}
+        >
           {packages.map((pkg) => (
-            <div
+            <motion.div
+              variants={itemVariants}
               key={pkg.name}
               className={`relative glass rounded-2xl p-8 flex flex-col transition-all duration-300 hover:-translate-y-1 ${
                 pkg.highlighted
@@ -68,7 +97,7 @@ const PricingSection = () => {
 
               <div className="mb-6">
                 <h3 className="text-xl font-heading font-bold">{pkg.name}</h3>
-                <p className="text-sm text-primary font-medium">{pkg.subtitle}</p>
+                <p className="text-sm text-primary font-medium mb-3">{pkg.subtitle}</p>
                 <p className="text-sm text-muted-foreground mt-2">{pkg.description}</p>
               </div>
 
@@ -91,9 +120,9 @@ const PricingSection = () => {
               >
                 Meer informatie
               </a>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

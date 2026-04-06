@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Send } from "lucide-react";
+import { Send, Calendar } from "lucide-react";
+import { motion } from "framer-motion";
 
 const ContactSection = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -10,74 +11,130 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="section-padding">
-      <div className="container mx-auto max-w-xl">
-        <div className="glass rounded-2xl p-8 md:p-12">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-3">
-              Klaar om te automatiseren en{" "}
-              <span className="gradient-text">domineren</span>?
-            </h2>
-            <p className="text-muted-foreground">
-              Laat je gegevens achter en we plannen een vrijblijvende
-              strategiesessie in.
-            </p>
-          </div>
+    <section id="contact" className="section-padding overflow-hidden">
+      <div className="container mx-auto max-w-5xl">
+        <motion.div 
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+        >
+          <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+            Klaar om digitaal te <span className="text-primary italic">groeien</span>?
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Laat je gegevens achter en we plannen een vrijblijvende kennismaking in om jouw digitale project te bespreken.
+          </p>
+        </motion.div>
 
-          {submitted ? (
-            <div className="text-center py-8 animate-fade-in-up">
-              <div className="w-16 h-16 rounded-full bg-primary/15 flex items-center justify-center mx-auto mb-4">
-                <Send size={28} className="text-primary" />
-              </div>
-              <p className="text-lg font-heading font-semibold">Bedankt!</p>
-              <p className="text-muted-foreground text-sm mt-1">
-                We nemen zo snel mogelijk contact op.
+        <div className="grid lg:grid-cols-2 gap-12">
+          {/* Calendly & Info */}
+          <motion.div 
+            className="space-y-8"
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            <div className="glass p-8 rounded-2xl border border-border">
+              <h3 className="text-2xl font-bold font-heading mb-6">Direct inplannen?</h3>
+              <p className="text-muted-foreground mb-8">
+                Geen zin om te wachten? Kies een moment dat voor u past in onze agenda voor een vrijblijvend video-gesprek van 30 minuten.
               </p>
-            </div>
-          ) : (
-            <form onSubmit={handleSubmit} className="space-y-5">
-              <div>
-                <label className="block text-sm font-medium mb-1.5">Naam</label>
-                <input
-                  type="text"
-                  required
-                  className="w-full px-4 py-3 rounded-lg bg-secondary border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
-                  placeholder="Je volledige naam"
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-medium mb-1.5">E-mail</label>
-                <input
-                  type="email"
-                  required
-                  className="w-full px-4 py-3 rounded-lg bg-secondary border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
-                  placeholder="je@email.nl"
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-medium mb-1.5">Pakket</label>
-                <select
-                  required
-                  className="w-full px-4 py-3 rounded-lg bg-secondary border border-border text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
-                  defaultValue=""
-                >
-                  <option value="" disabled>
-                    Selecteer een pakket
-                  </option>
-                  <option>Instap (Zichtbaarheid)</option>
-                  <option>Midden (Automatisering)</option>
-                  <option>Premium (Digitale Dominantie)</option>
-                </select>
-              </div>
-              <button
-                type="submit"
-                className="w-full py-3.5 rounded-lg bg-primary text-primary-foreground font-semibold hover:opacity-90 transition-all duration-300 glow-primary flex items-center justify-center gap-2"
+              
+              <a 
+                href="https://calendly.com/hello-kustlab" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 w-full py-4 rounded-lg bg-primary text-primary-foreground font-semibold hover:opacity-90 glow-primary transition-all duration-300 shadow-lg hover:-translate-y-1"
               >
-                Verstuur Aanvraag
-                <Send size={16} />
-              </button>
-            </form>
-          )}
+                <Calendar size={18} />
+                Boek een Strategiegesprek
+              </a>
+              
+              <div className="mt-8 pt-6 border-t border-border">
+                <p className="text-sm font-medium mb-1">Liever mailen?</p>
+                <a href="mailto:hello@kustlab.com" className="text-primary hover:underline">
+                  hello@kustlab.com
+                </a>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Contact form */}
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            <div className="glass rounded-2xl p-8 border border-border">
+              {submitted ? (
+                <div className="text-center py-12 animate-fade-in-up">
+                  <div className="w-16 h-16 rounded-full bg-primary/15 flex items-center justify-center mx-auto mb-4">
+                    <Send size={28} className="text-primary" />
+                  </div>
+                  <p className="text-xl font-heading font-semibold">Bedankt voor je bericht!</p>
+                  <p className="text-muted-foreground mt-2">
+                    Ik neem zo snel mogelijk contact met je op.
+                  </p>
+                </div>
+              ) : (
+                <form onSubmit={handleSubmit} className="space-y-5">
+                  <h3 className="text-xl font-bold font-heading mb-6">Stuur ons een bericht</h3>
+                  <div>
+                    <label className="block text-sm font-medium mb-1.5">Naam</label>
+                    <input
+                      type="text"
+                      required
+                      className="w-full px-4 py-3 rounded-lg bg-background border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                      placeholder="Je volledige naam"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium mb-1.5">E-mail</label>
+                    <input
+                      type="email"
+                      required
+                      className="w-full px-4 py-3 rounded-lg bg-background border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                      placeholder="hello@kustlab.com"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium mb-1.5">Interesse in</label>
+                    <select
+                      required
+                      className="w-full px-4 py-3 rounded-lg bg-background border border-border text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                      defaultValue=""
+                    >
+                      <option value="" disabled>
+                        Kies een onderwerp
+                      </option>
+                      <option>Starter Pakket</option>
+                      <option>Business Pakket</option>
+                      <option>E-commerce / Premium Pakket</option>
+                      <option>Iets anders...</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium mb-1.5">Bericht (optioneel)</label>
+                    <textarea
+                      rows={3}
+                      className="w-full px-4 py-3 rounded-lg bg-background border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all resize-none"
+                      placeholder="Vertel kort over je project..."
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    className="w-full py-4 rounded-lg bg-foreground text-background font-semibold hover:bg-foreground/90 transition-all duration-300 flex items-center justify-center gap-2"
+                  >
+                    Verstuur Aanvraag
+                  </button>
+                </form>
+              )}
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>

@@ -27,9 +27,8 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex items-center justify-between">
         <a href="#" className="text-xl md:text-2xl font-heading font-bold tracking-tight">
-          <span className="text-foreground">Digital</span>
-          <span className="text-primary">.</span>
-          <span className="text-foreground">Solutions</span>
+          <span className="text-foreground">Kust</span>
+          <span className="text-primary">lab</span>
         </a>
 
         {/* Desktop */}
