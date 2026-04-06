@@ -52,7 +52,7 @@ const ContactSection = () => {
               </p>
               
               <a 
-                href="https://calendly.com/hello-kustlab" 
+                href="https://calendly.com/brovinanick/15min" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 w-full py-4 rounded-lg bg-primary text-primary-foreground font-semibold hover:opacity-90 glow-primary transition-all duration-300 shadow-lg hover:-translate-y-1"
