@@ -17,7 +17,7 @@ const AboutSection = () => {
           <div className="flex-1 space-y-8">
             <div className="space-y-4">
               <h2 className="text-3xl md:text-4xl font-heading font-bold">
-                Aangenaam, ik ben <span className="text-primary">Nick Bohlke</span>
+                Aangenaam, ik ben <span className="text-primary">Nick</span>
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 De drijvende kracht achter Kustlab. Vanuit Brugge help ik startende zelfstandigen, lokale kmo's en creatieve freelancers met betaalbare en professionele digitale oplossingen.
@@ -25,11 +25,6 @@ const AboutSection = () => {
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Mijn aanpak is persoonlijk, transparant en resultaatgericht. Geen ingewikkeld jargon, maar heldere afspraken en een website die voor u werkt.
               </p>
-            </div>
-
-            <div className="flex items-center gap-2 text-muted-foreground">
-              <Globe2 className="w-5 h-5 text-primary" />
-              <span>Beschikbaar in <strong className="text-foreground">Nederlands</strong>, <strong className="text-foreground">Frans</strong> en <strong className="text-foreground">Engels</strong>.</span>
             </div>
           </div>
 
