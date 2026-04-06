@@ -6,6 +6,8 @@ const packages = [
     name: "Starter",
     subtitle: "Zichtbaarheid",
     description: "Professionele, snelle website.",
+    price: "Vanaf € 1.450",
+    monthlyPrice: "€ 50",
     features: [
       "Modern & Responsive Webdesign",
       "Basis SEO",
@@ -17,6 +19,8 @@ const packages = [
     name: "Business",
     subtitle: "Automatisering",
     description: "Website gekoppeld aan slimme processen.",
+    price: "Vanaf € 2.950",
+    monthlyPrice: "€ 150",
     badge: "Meest Gekozen",
     features: [
       "Alles uit Starter +",
@@ -30,6 +34,8 @@ const packages = [
     name: "E-Commerce / Premium",
     subtitle: "Digitale Dominantie",
     description: "Volledig ontzorgd met AI.",
+    price: "Op aanvraag",
+    monthlyPrice: "Maatwerk retainer",
     features: [
       "Alles uit Business +",
       "Custom Portals",
@@ -99,6 +105,16 @@ const PricingSection = () => {
                 <h3 className="text-xl font-heading font-bold">{pkg.name}</h3>
                 <p className="text-sm text-primary font-medium mb-3">{pkg.subtitle}</p>
                 <p className="text-sm text-muted-foreground mt-2">{pkg.description}</p>
+                
+                <div className="mt-6 mb-2">
+                  <span className="text-3xl font-heading font-bold">{pkg.price}</span>
+                </div>
+                {pkg.monthlyPrice && (
+                  <p className="text-sm flex flex-col font-medium mb-4">
+                    <span className="text-muted-foreground">+ {pkg.monthlyPrice} /mnd</span>
+                    <span className="text-muted-foreground/60 text-xs mt-1">service & hosting</span>
+                  </p>
+                )}
               </div>
 
               <ul className="space-y-3 flex-1 mb-8">
