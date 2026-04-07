@@ -1,0 +1,74 @@
+/* ============================================================
+   KUSTLAB — Animated Gradient Logo
+   Paste dit in je index.css (of in de <style> tag van index.html)
+   ============================================================ */
+
+/* 1. Importeer Outfit font (als je dit nog niet hebt) */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;800&display=swap');
+
+/* 2. CSS Variabelen (al aanwezig in je project) */
+:root {
+  --font-heading:   'Outfit', sans-serif;
+  --neon-teal:      #00ebd3;
+  --neon-orange:    #ff5200;
+  --neon-gradient:  linear-gradient(to right, #00ebd3, #61c87a, #a5b55e, #ff8a00, #ff5200);
+  --bg-dark:        #0a0a0e;
+  --text-primary:   #f0f0f0;
+}
+
+/* 3. Gradient animatie keyframe */
+@keyframes textGradientFlow {
+  0%   { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+/* 4. Logo klasse — gebruik op je <a> of <span> met de tekst "Kustlab." */
+.logo,
+.logo-text,
+.navbar-brand {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.6rem;             /* Pas aan naar wens */
+  letter-spacing: -0.5px;
+  line-height: 1;
+  text-decoration: none;
+
+  /* Gradient tekst */
+  background: linear-gradient(
+    to right,
+    #00ebd3, #61c87a, #a5b55e, #ff8a00, #ff5200, #ff3300, #00ebd3
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  /* Animatie */
+  animation: textGradientFlow 5s linear infinite;
+}
+
+/* Hover: licht versnellen */
+.logo:hover,
+.logo-text:hover,
+.navbar-brand:hover {
+  animation-duration: 2.5s;
+}
+
+
+/* ============================================================
+   FAVICON INSTRUCTIES VOOR NETLIFY
+   ============================================================
+
+   Stap 1: Kopieer favicon.ico naar de ROOT van je project
+           (zelfde map als index.html)
+
+   Stap 2: Voeg dit toe in de <head> van je index.html:
+
+   <link rel="icon" type="image/x-icon" href="/favicon.ico">
+   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="/kustlab-icon-512x512.png">
+
+   Stap 3: Deploy via Netlify drag-and-drop zoals gewoonlijk ✓
+
+   ============================================================ */

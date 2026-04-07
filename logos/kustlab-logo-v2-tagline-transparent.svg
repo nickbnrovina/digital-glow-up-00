@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 140" width="520" height="140">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#00ebd3"/>
+      <stop offset="25%"  stop-color="#61c87a"/>
+      <stop offset="50%"  stop-color="#a5b55e"/>
+      <stop offset="75%"  stop-color="#ff8a00"/>
+      <stop offset="100%" stop-color="#ff5200"/>
+    </linearGradient>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;800&amp;display=swap');
+      .logo-text {
+        font-family: 'Outfit', 'Arial Black', sans-serif;
+        font-weight: 800;
+        font-size: 86px;
+        letter-spacing: -2px;
+      }
+      .tagline {
+        font-family: 'Outfit', 'Arial', sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+      }
+    </style>
+  </defs>
+  <rect width="520" height="140" fill="none"/>
+  <text class="logo-text" x="16" y="90" fill="url(#brandGrad)">Kustlab.</text>
+  <text class="tagline" x="20" y="120" fill="#a0a0b0">Digital Solutions</text>
+</svg>

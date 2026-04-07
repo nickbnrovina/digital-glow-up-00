@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 80" width="500" height="80">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#00ebd3"/>
+      <stop offset="25%"  stop-color="#61c87a"/>
+      <stop offset="50%"  stop-color="#a5b55e"/>
+      <stop offset="75%"  stop-color="#ff8a00"/>
+      <stop offset="100%" stop-color="#ff5200"/>
+    </linearGradient>
+    <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#00ebd3"/>
+      <stop offset="100%" stop-color="#ff5200"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@800&amp;display=swap');
+      .logo-text {
+        font-family: 'Outfit', 'Arial Black', sans-serif;
+        font-weight: 800;
+        font-size: 52px;
+        letter-spacing: -1px;
+      }
+      .icon-letter {
+        font-family: 'Outfit', 'Arial Black', sans-serif;
+        font-weight: 800;
+        font-size: 30px;
+      }
+    </style>
+  </defs>
+  <rect width="500" height="80" fill="none"/>
+  <!-- Icon box -->
+  <rect x="10" y="10" width="58" height="58" rx="12" fill="rgba(0,235,211,0.04)" stroke="#00ebd3" stroke-width="1.5" stroke-opacity="0.6" filter="url(#glow)"/>
+  <!-- Inner glow overlay -->
+  <rect x="10" y="10" width="58" height="58" rx="12" fill="none" stroke="#00ebd3" stroke-width="6" stroke-opacity="0.05"/>
+  <!-- K letter -->
+  <text class="icon-letter" x="39" y="49" text-anchor="middle" fill="url(#iconGrad)">K</text>
+  <!-- Wordmark -->
+  <text class="logo-text" x="86" y="62" fill="url(#brandGrad)">Kustlab.</text>
+</svg>

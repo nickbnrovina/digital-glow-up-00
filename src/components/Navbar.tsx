@@ -26,9 +26,14 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between">
-        <a href="#" className="flex items-baseline text-xl md:text-2xl font-heading font-bold tracking-tight group">
-          <span 
-            className="inline-block bg-clip-text text-transparent transition-opacity duration-300 group-hover:opacity-80 pb-1"
+        <a href="#" className="flex items-center gap-2 group transition-opacity duration-300 group-hover:opacity-80">
+          <img
+            src="/icon.svg"
+            alt="Kustlab icoon"
+            className="h-8 w-8"
+          />
+          <span
+            className="inline-block text-xl md:text-2xl font-heading font-bold tracking-tight bg-clip-text text-transparent pb-1"
             style={{
               backgroundImage: "linear-gradient(to right, #00ebd3, #61c87a, #a5b55e, #ff8a00, #ff5200, #ff3300, #00ebd3)",
               backgroundSize: "200% auto",
