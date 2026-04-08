@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:www.tandartsdekeyser.be)",
+      "WebFetch(domain:www.agencecoucke.be)",
+      "WebFetch(domain:www.snauwaertcars.be)",
+      "WebFetch(domain:vo-interieur.be)",
+      "WebFetch(domain:www.notbossuytlecluyse.be)",
+      "WebFetch(domain:www.algemenebouwwerkenzwaenepoel.be)",
+      "WebFetch(domain:www.coiffuredenoyel.be)",
+      "WebFetch(domain:www.wimdewulf.com)",
+      "WebFetch(domain:ultimevents.be)",
+      "WebFetch(domain:www.dapkoptotstaart.be)",
+      "WebFetch(domain:www.tandartsgabriels.be)",
+      "WebFetch(domain:www.minybv.be)",
+      "WebFetch(domain:lovdesign.be)",
+      "WebFetch(domain:atelierrose.be)",
+      "Bash(gh auth:*)",
+      "Bash(git --version)",
+      "Bash(git config:*)"
+    ]
+  }
+}

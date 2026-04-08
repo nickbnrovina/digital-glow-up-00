@@ -29,8 +29,8 @@ const services: Service[] = [
     icon: Settings,
   },
   {
-    title: "Hosting & Onderhoud",
-    description: "Zorgeloze cloud-hosting, reguliere updates en veiligheidsmonitoring zodat u zich kan focussen op uw zaak.",
+    title: "Hosting & Cybersecurity",
+    description: "GDPR-ready cloud-hosting, proactieve cybersecurity en reguliere updates zodat uw data altijd veilig is.",
     icon: Server,
   },
   {
