@@ -1,7 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { X, Minus, Plus, ShoppingBag } from 'lucide-react';
 import { useCart } from '../context/CartContext';
-
 const Cart = () => {
   const { isCartOpen, setIsCartOpen, cartItems, removeFromCart, updateQuantity, cartTotal } = useCart();
 
@@ -97,9 +97,13 @@ const Cart = () => {
                 <p>€{cartTotal.toFixed(2)}</p>
               </div>
               <p className="text-xs text-rustic-600 mb-4 text-center">Verzendkosten en btw berekend in volgende stap.</p>
-              <button className="w-full bg-navy-900 text-white px-6 py-4 text-sm uppercase tracking-widest font-medium hover:bg-terracotta-500 transition-colors shadow-lg">
+              <Link 
+                to="/checkout"
+                onClick={() => setIsCartOpen(false)}
+                className="w-full bg-navy-900 text-white px-6 py-4 text-sm uppercase tracking-widest font-medium hover:bg-terracotta-500 transition-colors shadow-lg block text-center"
+              >
                 Afrekenen
-              </button>
+              </Link>
             </div>
           )}
         </div>

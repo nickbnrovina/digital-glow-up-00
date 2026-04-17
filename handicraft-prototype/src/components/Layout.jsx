@@ -15,7 +15,7 @@ const Layout = () => {
           
           {/* Logo brand */}
           <Link to="/" className="flex flex-col flex-shrink-0">
-            <span className="font-sans text-[10px] sm:text-xs uppercase tracking-[0.3em] text-terracotta-500 font-semibold mb-1">Craft</span>
+            <span className="font-sans text-[10px] sm:text-xs uppercase tracking-[0.3em] text-terracotta-500 font-semibold mb-1">Handicraft</span>
             <span className="font-script text-3xl sm:text-4xl leading-7 text-navy-900">Valerie.</span>
           </Link>
           

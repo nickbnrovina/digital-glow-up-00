@@ -106,7 +106,7 @@ const Account = () => {
           
           <div className="relative z-10 flex justify-between items-start mb-12">
             <div>
-              <span className="font-sans text-xs uppercase tracking-[0.3em] text-terracotta-400 font-semibold mb-1 block">Craft</span>
+              <span className="font-sans text-xs uppercase tracking-[0.3em] text-terracotta-400 font-semibold mb-1 block">Handicraft</span>
               <span className="font-script text-3xl leading-7">Valerie.</span>
             </div>
             <Star className="w-8 h-8 text-terracotta-400/50" />
