@@ -56,16 +56,16 @@ Dit is de centrale plek waar we je acquisitie bijhouden. Als Digital Solutions C
 | **Atelier Streep** | info@atelierstreep.be | Schilderbedrijf | 🟡 E-mail 1 verstuurd | Follow-up over 5 dgn (12-04) | 07-04-2026 |
 | **Domopaint** | info@domopaint.be | Schilderbedrijf | 🟡 E-mail 1 verstuurd | Follow-up over 5 dgn (12-04) | 07-04-2026 |
 | **Tuinen Devriendt** | jarne01.devriendt@telenet.be | Tuinaanleg | 🟡 E-mail 1 verstuurd | Follow-up over 5 dgn (12-04) | 07-04-2026 |
-| **Schrijnwerk Hendrik Maertens** | info@schrijnwerkbrugge.be | Schrijnwerker | ⚪ Nieuw | Lindy draft laten maken | - |
-| **Schrijnwerk Inghels** | info@schrijnwerkinghels.be | Schrijnwerker | ⚪ Nieuw | Lindy draft laten maken | - |
-| **Schrijnwerk Beerlandt** | info@schrijnwerkbeerlandt.be | Interieurbouw | ⚪ Nieuw | Lindy draft laten maken | - |
-| **Interieur Blomme** | info@interieurblomme.be | Interieurbouw | ⚪ Nieuw | Lindy draft laten maken | - |
-| **Pivot Interieur** | info@pivotinterieur.be | Interieurbouw | ⚪ Nieuw | Lindy draft laten maken | - |
-| **HARS Schrijnwerk** | info@hars-schrijnwerk.be | Schrijnwerker | ⚪ Nieuw | Lindy draft laten maken | - |
-| **Schrijnwerken De Graeve** | michiel@schrijnwerken-degraeve.be | Schrijnwerker | ⚪ Nieuw | Lindy draft laten maken | - |
-| **A&K Design** | info@a-kdesign.be | Interieurbouw | ⚪ Nieuw | Lindy draft laten maken | - |
-| **VDH-Projects** | info@vdh-projects.be | Maatwerkmeubels | ⚪ Nieuw | Lindy draft laten maken | - |
-| **Sorgeloose Totaalinterieur** | sorgeloosetotaalinterieur@gmail.com | Interieurbouw | ⚪ Nieuw | Lindy draft laten maken | - |
+| **Schrijnwerk Hendrik Maertens** | info@schrijnwerkbrugge.be | Schrijnwerker | 🟡 E-mail 1 verstuurd | Follow-up over 5 dgn (13-04) | 08-04-2026 |
+| **Schrijnwerk Inghels** | info@schrijnwerkinghels.be | Schrijnwerker | 🟡 E-mail 1 verstuurd | Follow-up over 5 dgn (13-04) | 08-04-2026 |
+| **Schrijnwerk Beerlandt** | info@schrijnwerkbeerlandt.be | Interieurbouw | 🟡 E-mail 1 verstuurd | Follow-up over 5 dgn (13-04) | 08-04-2026 |
+| **Interieur Blomme** | info@interieurblomme.be | Interieurbouw | 🟡 E-mail 1 verstuurd | Follow-up over 5 dgn (13-04) | 08-04-2026 |
+| **Pivot Interieur** | info@pivotinterieur.be | Interieurbouw | 🟡 E-mail 1 verstuurd | Follow-up over 5 dgn (13-04) | 08-04-2026 |
+| **HARS Schrijnwerk** | info@hars-schrijnwerk.be | Schrijnwerker | 🟡 E-mail 1 verstuurd | Follow-up over 5 dgn (13-04) | 08-04-2026 |
+| **Schrijnwerken De Graeve** | michiel@schrijnwerken-degraeve.be | Schrijnwerker | 🟡 E-mail 1 verstuurd | Follow-up over 5 dgn (13-04) | 08-04-2026 |
+| **A&K Design** | info@a-kdesign.be | Interieurbouw | 🟡 E-mail 1 verstuurd | Follow-up over 5 dgn (13-04) | 08-04-2026 |
+| **VDH-Projects** | info@vdh-projects.be | Maatwerkmeubels | 🟡 E-mail 1 verstuurd | Follow-up over 5 dgn (13-04) | 08-04-2026 |
+| **Sorgeloose Totaalinterieur** | sorgeloosetotaalinterieur@gmail.com | Interieurbouw | 🟡 E-mail 1 verstuurd | Follow-up over 5 dgn (13-04) | 08-04-2026 |
 
 ---
 
