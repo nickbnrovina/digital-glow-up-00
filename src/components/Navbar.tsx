@@ -12,9 +12,10 @@ const Navbar = () => {
   }, []);
 
   const links = [
-    { label: "Diensten", href: "#diensten" },
-    { label: "Werkwijze", href: "#werkwijze" },
-    { label: "Pakketten", href: "#pakketten" },
+    { label: "Diensten", href: "/#diensten" },
+    { label: "Werkwijze", href: "/#werkwijze" },
+    { label: "Pakketten", href: "/#pakketten" },
+    { label: "Kennisbank", href: "/kennisbank" },
   ];
 
   return (
@@ -26,7 +27,7 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between">
-        <a href="#" className="flex items-center gap-2 group transition-opacity duration-300 group-hover:opacity-80">
+        <a href="/" className="flex items-center gap-2 group transition-opacity duration-300 group-hover:opacity-80">
           <img
             src="/icon.svg"
             alt="Kustlab icoon"
@@ -56,7 +57,7 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="#contact"
+            href="/#contact"
             className="px-5 py-2.5 rounded-lg bg-gradient-flow text-primary-foreground text-sm font-semibold hover:opacity-90 transition-all duration-300 glow-primary"
           >
             Boek een Strategiegesprek
@@ -87,7 +88,7 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="#contact"
+            href="/#contact"
             onClick={() => setMobileOpen(false)}
             className="block w-full text-center px-4 py-3 rounded-lg bg-gradient-flow text-primary-foreground font-semibold"
           >
