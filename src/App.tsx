@@ -10,10 +10,9 @@ import Terms from "./pages/Terms.tsx";
 import PortfolioDetail from "./pages/PortfolioDetail.tsx";
 import KennisbankIndex from "./pages/KennisbankIndex.tsx";
 import KennisbankArticlePage from "./pages/KennisbankArticle.tsx";
+import { HelmetProvider } from 'react-helmet-async';
 
 const queryClient = new QueryClient();
-
-import { HelmetProvider } from 'react-helmet-async';
 
 const App = () => (
   <HelmetProvider>

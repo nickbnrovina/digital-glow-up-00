@@ -1,5 +1,5 @@
 import { useParams, Link } from "react-router-dom";
-import { ArrowLeft, CheckCircle2 } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { portfolioItems } from "@/data/portfolio";
 import { Button } from "@/components/ui/button";
 import { Helmet } from 'react-helmet-async';
@@ -47,15 +47,15 @@ const PortfolioDetail = () => {
 
         <div className="grid md:grid-cols-3 gap-8 mb-12 border-y py-8">
           <div>
-            <h3 className="font-semibold text-sm uppercase tracking-wider text-muted-foreground mb-2">Client</h3>
+            <h3 className="font-semibold text-sm uppercase tracking-wider text-muted-foreground mb-2">Klant</h3>
             <p className="font-medium">{project.client}</p>
           </div>
           <div>
-            <h3 className="font-semibold text-sm uppercase tracking-wider text-muted-foreground mb-2">Year</h3>
+            <h3 className="font-semibold text-sm uppercase tracking-wider text-muted-foreground mb-2">Jaar</h3>
             <p className="font-medium">{project.year}</p>
           </div>
           <div>
-            <h3 className="font-semibold text-sm uppercase tracking-wider text-muted-foreground mb-2">Tech Stack</h3>
+            <h3 className="font-semibold text-sm uppercase tracking-wider text-muted-foreground mb-2">Technologie</h3>
             <div className="flex flex-wrap gap-2">
               {project.techStack.map(tech => (
                 <span key={tech} className="px-2 py-1 bg-muted rounded-md text-xs font-medium">{tech}</span>

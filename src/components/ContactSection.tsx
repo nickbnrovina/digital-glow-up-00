@@ -48,7 +48,7 @@ const ContactSection = () => {
             <div className="glass p-8 rounded-2xl border border-border">
               <h3 className="text-2xl font-bold font-heading mb-6">Direct inplannen?</h3>
               <p className="text-muted-foreground mb-8">
-                Geen zin om te wachten? Kies een moment dat voor u past in onze agenda voor een vrijblijvend video-gesprek van 30 minuten.
+                Geen zin om te wachten? Kies een moment dat voor u past in onze agenda voor een vrijblijvend video-gesprek van 15 minuten.
               </p>
               
               <a 

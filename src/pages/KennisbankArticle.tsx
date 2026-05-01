@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { useParams, Link, Navigate } from "react-router-dom";
 import { ArrowLeft, Calendar, Clock, Tag } from "lucide-react";
 import { kennisbankArticles } from "@/data/kennisbank";

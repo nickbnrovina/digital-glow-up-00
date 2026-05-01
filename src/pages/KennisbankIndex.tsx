@@ -1,6 +1,5 @@
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, BookOpen, Clock } from "lucide-react";
+import { ArrowRight, Clock } from "lucide-react";
 import { kennisbankArticles } from "@/data/kennisbank";
 
 import { Helmet } from 'react-helmet-async';

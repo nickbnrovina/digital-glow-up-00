@@ -1,4 +1,4 @@
-import { CheckCircle2, User, Globe2 } from "lucide-react";
+
 
 const AboutSection = () => {
   const processSteps = [
